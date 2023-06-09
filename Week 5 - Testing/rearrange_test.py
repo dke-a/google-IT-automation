@@ -27,6 +27,8 @@ class TestRearrange(unittest.TestCase):
         expected = "Voltaire"
         self.assertEqual(rearrange_name(testcase),expected)
         #raises assertion error since empty string is returned
+        #fixed by returnin name instead of ""
+        
 
 
 unittest.main()
