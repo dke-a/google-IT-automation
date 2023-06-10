@@ -42,3 +42,11 @@ cat spider.txt | tr ' ' '\n' | sort | uniq -c |sort -nr | head
 
 `head` first ten lines of stdout.
 
+---
+
+## Third example
+
+![](images/20230609231324.png)
+
+![](images/20230609231336.png)
+
