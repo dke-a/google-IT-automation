@@ -88,3 +88,4 @@ When using Git to work on a new feature or refactor of another kind, it is best 
 
 `git checkout -b` create branch and checkout
 
+`git push -u origin <branch>` push branch to remote
