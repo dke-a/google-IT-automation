@@ -91,9 +91,29 @@ When using Git to work on a new feature or refactor of another kind, it is best 
 `git push -u origin <branch>` push branch to remote
 
 `git push -u origin <branch>` push branch to remote
+
 ### Rebasing Changes
 
 `git rebase` change base commit that is used for our branch.
 
-### Another Rebasing Example
+### Best Practices for Collaboration
+
+- Always synchronize your branches before starting any work on your own.
+- Avoid having very large changes that modify a lot of different things.
+- We called out already that when working on a big change, it makes sense to have a separate feature branch.
+- Regularly merge changes made on the master branch back onto the feature branch.
+- Practice to have the latest version of the project in the master branch and a stable version of the project on a separate branch.
+- Never rebase changes that have been pushed to remote repos.
+- Having good commit changes is important.
+  
+### Conflict Resolution Cheat Sheet
+
+Merge conflicts are not uncommon when working in a team of developers, or on Open Source Software. Fortunately, GitHub has some good documentation on how to handle them when they happen:
+
+- https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-merge-conflicts
+- https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line
+
+You can also use [git rebase branchname](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) to change the base of the current branch to be branchname
+
+The git rebase command is a lot more powerful.  Check out [this link](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) for more information.
 
