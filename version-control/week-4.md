@@ -17,3 +17,12 @@ When collaborating on projects hosted on Github:
    * `git clone <repo location>`
 3. Create branch
    * `git checkout -b <branch name>`
+
+### Squashing Changes
+
+Should not rewrite history when commits have been published. However, this is waived with pull requests since it is only you who have cloned your fork of the repo.
+
+`rebase -i <branch>`create a single commit that includes both changes and a more detailed descrpition.
+
+Text editor opens with a list of all selected commits from oldest to most recent.
+
