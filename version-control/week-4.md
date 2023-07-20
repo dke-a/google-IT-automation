@@ -26,3 +26,19 @@ Should not rewrite history when commits have been published. However, this is wa
 
 Text editor opens with a list of all selected commits from oldest to most recent.
 
+![](images/20230719223301.png)
+
+Default action is `pick` which takes commits and rebases against branch selected.
+
+`sqaush` combine both commits and modify commit message
+
+![](images/20230719224316.png)
+
+![](images/20230719225227.png)
+
+Check out the following link for more information:
+
+https://help.github.com/en/articles/about-pull-request-merges
+
+## Code Reviews
+
