@@ -1,0 +1,3 @@
+[submodule "version-control/rearrange"]
+	path = version-control/rearrange
+	url = https://github.com/dke-a/rearrange.git
