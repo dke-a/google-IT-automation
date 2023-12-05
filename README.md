@@ -1,2 +1,2 @@
-# Google-IT-Automation-Python---Coursera
+# Google IT Automation - Coursers
 Compilation of code for the course.
