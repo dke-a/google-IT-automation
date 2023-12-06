@@ -4,23 +4,55 @@
 
 ### Applying Rules Locally
 
-**Declarative Language:**
+- **Puppet Syntax**: Understanding the syntax and different resources available in Puppet.
+- **Deployment**: Puppet is typically deployed in a client-server architecture but can also be used stand-alone.
 
-- Puppet uses a declarative language, meaning you declare the desired state, not the steps to achieve it.
-- This is different from procedural languages like Python or C, where you specify the exact sequence of steps to accomplish a task.
+## Stand-Alone Puppet
 
-**Idempotency:**
+- **Usage**: Common for testing new configurations or in complex setups where connecting to a master is not ideal.
+- **Process**: In stand-alone mode, the same computer processes facts, calculates rules, and makes changes locally.
 
-- Idempotency means that an action can be performed repeatedly without changing the system's state after the first execution, with no unintended side effects.
-- Most Puppet resources are designed to be idempotent, ensuring consistent results with multiple runs.
-- An exception is the **`exec`** resource, which can be non-idempotent if not carefully handled.
+## Installing Puppet
 
-**Test and Repair Paradigm:**
+- **Platforms**: Puppet is available on various platforms.
+- **Installation Methods**:
+  - Package management system in the OS.
+  - Direct download from the official website.
+- **Example**: Using `sudo apt install puppet-master` to install Puppet on Ubuntu.
 
-- Configuration management tools like Puppet follow the test and repair paradigm.
-- Puppet tests whether the desired configuration is already in place and only takes action when necessary to achieve the desired state.
+## Creating Puppet Rules
 
-**Statelessness:**
+- **Manifest Files**: Rules are stored in files called manifests, with a `.pp` extension.
+- **Example Task**: Ensuring that debugging tools (like `htop`) are installed on each computer.
 
-- Puppet is stateless, meaning each Puppet run is independent of previous and future runs.
-- During each run, the Puppet agent collects current facts, the master generates rules based on these facts, and the agent applies those rules.
+### Creating a Manifest File
+
+- **File Name**: `tools.pp`
+- **Resource**: Package resource for `htop`.
+- **Operation**: Ensure the `htop` package is present on the computer.
+
+### Applying Puppet Rules
+
+- **Command**: `sudo puppet apply -v tools.pp`
+  - `-v` flag for verbose output.
+- **Process**:
+  - Loading facts.
+  - Compiling a catalog.
+  - Applying configuration.
+  - Installing requested packages.
+  - Completing catalog application.
+
+### Understanding Puppet Catalog
+
+- **Catalog**: A list of rules generated for a specific computer after evaluating variables, conditionals, and functions.
+- **Behavior**: In simple cases, the catalog matches the code. In complex cases, it varies based on fact values.
+
+### Verifying Rule Application
+
+- **Testing**: Run the `htop` command to verify installation.
+- **Reapplication**: Puppet recognizes already installed packages and skips reinstallation.
+
+## Upcoming Topics
+
+- Managing relationships between different Puppet resources.
+- Practical application of these relationships.
