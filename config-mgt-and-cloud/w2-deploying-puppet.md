@@ -52,7 +52,54 @@
 - **Testing**: Run the `htop` command to verify installation.
 - **Reapplication**: Puppet recognizes already installed packages and skips reinstallation.
 
-## Upcoming Topics
+### Upcoming Topics
 
 - Managing relationships between different Puppet resources.
 - Practical application of these relationships.
+
+## Managing Resource Relationships
+
+### Overview
+
+- **Previous Video**: Created and applied a simple manifest locally.
+- **Focus**: Exploring more complex Puppet manifest configurations.
+
+### Resource Relationships in Puppet
+
+- **Manifest Example**: `ntp.pp`, managing NTP (Network Time Protocol) configuration.
+- **Resource Relationships**:
+  - Configuration file requires the NTP package.
+  - Service requires the configuration file.
+  - Service should be notified if the configuration file changes.
+
+#### Syntax Nuances
+
+- **Resource Types**: Written in lowercase when declared.
+- **Relationships**: Use uppercase for the first letter (e.g., Require, Notify).
+- **Understanding**: It may initially be confusing but becomes clearer with practice.
+
+### Puppet Classes
+
+- **Usage**: To apply rules described in a class.
+- **Example**: `include NTP` at the bottom of the file.
+- **Typical Practice**: Defining the class in one file and including it in another.
+
+### Applying the Manifest
+
+- **Process**:
+  - Install the package.
+  - Update the configuration file as needed.
+  - Restart the NTP service after configuration changes.
+
+### Editing and Applying Configuration Changes
+
+- **Task**: Changing NTP servers to Google's (e.g., `time1.google.com`).
+- **Steps**:
+  - Edit `ntp.conf` file.
+  - Rerun Puppet rules with the updated configuration.
+
+### Results and Next Steps
+
+- **Outcome**: Puppet successfully updates the configuration file and refreshes the service.
+- **Next Topic**: Utilizing Puppet modules to organize and separate related operations.
+
