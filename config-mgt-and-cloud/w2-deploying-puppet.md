@@ -67,6 +67,7 @@
 ### Resource Relationships in Puppet
 
 - **Manifest Example**: `ntp.pp`, managing NTP (Network Time Protocol) configuration.
+![](images/20231206213518.png)
 - **Resource Relationships**:
   - Configuration file requires the NTP package.
   - Service requires the configuration file.
