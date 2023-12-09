@@ -392,3 +392,10 @@ Check out the following link for more information:
 * **Improvements Over Time**: Enhance automated testing and expand the testing environment as the fleet grows.
 
 * **Gradual Implementation**: Start small and incrementally improve practices.
+
+##### More Information About Updating Deployments
+
+Check out the following links for more information:
+
+* <https://rspec-puppet.com/tutorial/>
+* <http://puppet-lint.com/>
