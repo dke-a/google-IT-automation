@@ -1,5 +1,6 @@
 import re
 import csv
+import os
 
 # Initialize dictionaries
 error_dict = {}
@@ -10,8 +11,11 @@ info_pattern = r"INFO (.*)"
 error_pattern = r"ERROR (.*) \((.*)\)"
 username_pattern = r"\((.*)\)"
 
+current_dir = os.path.abspath(os.path.curdir) # make sure running from script directory
+description_dir = current_dir+'/syslog.log'
+
 # Iterate over log entries in syslog.log
-with open('/Users/don/Documents/Python Scripts/Coursera - Google IT/py-interact-os/Week 7 - Final Project/syslog.log') as file:
+with open(description_dir) as file:
     for line in file:
         
         match_info = re.search(info_pattern, line)

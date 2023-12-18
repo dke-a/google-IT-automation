@@ -9,8 +9,11 @@ user_dict = {}
 info_pattern = r"INFO (.*) \((.*)\)" #could do without username regex
 error_pattern = r"ERROR (.*) \((.*)\)"
 
+current_dir = os.path.abspath(os.path.curdir) # make sure running from script directory
+description_dir = current_dir+'/syslog.log'
+
 # Iterate over log entries in syslog.log
-with open('py-interact-os/Week 7 - Final Project/syslog.log') as file:
+with open(description_dir) as file:
     for line in file:
         # Match INFO log entries
         match = re.search(info_pattern, line)
