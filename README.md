@@ -6,7 +6,7 @@ This repository contains my projects and assignments completed as part of the Go
 
 The program is structured into several courses, each focusing on a different aspect of IT automation:
 
-1. **Python Programming**: An introduction to Python, covering the basics and exploring Python's potential for solving practical, real-world problems.
+1. **Python Programming**: Covers the fundamentals of Python and explores its potential for solving practical, real-world problems. Topics included functions, math operations, code quality, control flow statements, data structures and manipulation.
 2. **Using Python to Interact with the Operating System**: Delving into system operations using Python. This includes file manipulation, system administration tasks, and automating processes.
     `/py-interact-os`
     Visit my module project blog [here](https://dkloud.hashnode.dev/automating-log-analysis-and-reporting-for-service-insights-a-python-based-approach).
