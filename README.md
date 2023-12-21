@@ -9,7 +9,7 @@ The program is structured into several courses, each focusing on a different asp
 1. **Python Programming**: Covers the fundamentals of Python and explores its potential for solving practical, real-world problems. Topics included functions, math operations, code quality, control flow statements, data structures and manipulation.
 2. **Using Python to Interact with the Operating System**: Delving into system operations using Python. This includes file manipulation, system administration tasks, and automating processes.
     `/py-interact-os`
-    Visit my module project blog [here](https://dkloud.hashnode.dev/automating-log-analysis-and-reporting-for-service-insights-a-python-based-approach).
+    Visit my module project blog [here](https://dkloud.hashnode.dev/automating-log-analysis-and-reporting).
 3. **Introduction to Git and GitHub**: An in-depth exploration of version control systems, focusing on Git and GitHub, essential tools for modern software development.
     `/version-control`
 4. **Troubleshooting and Debugging Techniques**: Techniques and approaches for identifying and resolving errors in IT systems, enhancing the reliability and efficiency of technology solutions.
