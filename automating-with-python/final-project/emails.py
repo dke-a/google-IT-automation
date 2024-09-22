@@ -28,7 +28,7 @@ def generate(sender, recipient, subject, body, attachment_path):
   return message
 
 def generate_error_report(sender, recipient, subject, body):
-    """Creates an email without an attachment."""
+    """Creates email for system health alert."""
     message = email.message.EmailMessage()
     message["From"] = sender
     message["To"] = recipient
