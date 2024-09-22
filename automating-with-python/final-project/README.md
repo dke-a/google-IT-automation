@@ -3,7 +3,6 @@
 **Objective:**
 Develop an automated system to update the online catalog of a fruit store with new product data provided by suppliers.
 
-**Key Tasks:**
 
 1. **Image and Description Processing:**
     - Receive product data in two file formats: .TIF (images) and .txt (descriptions).
@@ -30,7 +29,7 @@ Develop an automated system to update the online catalog of a fruit store with n
 
 - [`changeImage.py`](./changeImage.py): Processes images and modifies according to specification.
   - Meets task 1 requirements.
-- [`run.py`](./run.py): Processes and uploads product descriptions to web server.
+- [`run.py`](./run.py): Processes and uploads product descriptions to web server. [`supplier_image_upload.py`](./supplier_image_upload.py): Uploads images to server.
   - Meets task 2 and 3 requirements.
 
 2. Email notification system to suppliers with PDF attachment.
